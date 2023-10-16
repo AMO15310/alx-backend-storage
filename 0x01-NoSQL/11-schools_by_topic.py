@@ -3,4 +3,4 @@
 
 def schools_by_topic(mongo_collection,topic):
     """Return a list of content with specific topic"""
-    return [mongo_collection.find("topics":topic)]
+    return list(mongo_collection.find("topics":topic))
